@@ -12,9 +12,16 @@
     <input type="text" id="nombre" placeholder="Nombre del producto">
     <input type="number" id="precio" placeholder="Precio">
 
+    <br><br>
+
     <button onclick="agregarProducto()">Agregar</button>
+    <button onclick="editarProducto()">Guardar cambios</button>
+
+    <br><br>
 
     <input type="text" id="buscar" placeholder="Buscar..." onkeyup="buscarProducto()">
+
+    <br><br>
 
     <table>
         <thead>
@@ -24,8 +31,7 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody id="tabla">
-        </tbody>
+        <tbody id="tabla"></tbody>
     </table>
 
     <!-- Firebase -->
