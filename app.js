@@ -32,10 +32,7 @@ window.agregarProducto = async () => {
         return;
     }
 
-    await addDoc(productosRef, {
-        nombre,
-        precio
-    });
+    await addDoc(productosRef, { nombre, precio });
 
     limpiarInputs();
     mostrarProductos();
